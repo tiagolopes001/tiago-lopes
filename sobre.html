@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/sobre.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="sobre.html"> Sobre</a></li>
+			<li><a href="portifolio.html"> Portifolio</a></li>
+			<li><a href="contato.html"> Contato</a></li>
+			</ul>
+
+		</nav>
+
+	<div class="layout">
+	<header>
+		<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s" >
+				<img src="img/logo-topo.png" alt="logo topo">
+				
+			</div>
+			
+			<div class="links">
+				<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobre.html"> Sobre</a></li>
+						<li><a href="portifolio.html"> Portifolio</a></li>
+						<li><a href="contato.html"> contato</a></li>
+					</ul>
+
+				</nav>
+
+				<a class="toggle" href="javascript:;"> 
+					<span></span>
+					<span></span>
+					<span></span>
+
+				</a>
+
+
+				<ul class="social">
+					<li>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-github-alt"></i></a>
+					</li>
+
+
+				</ul>
+			</div>
+			<h1><strong>Tiago</strong> T. <strong>Lopes</strong></h1>
+
+			<p>Code//Share//Reboot</p>
+
+		</div>
+
+
+	</header>
+	
+	<main>
+		<section class="sobre">
+			<div class="container">
+		
+
+				<div class="textos">
+
+					<p><strong> Olá, meu nome é Tiago </strong>, sou estudante do curso técnico em Informática no Centro Ingegrado de Educação do Baixo Tocantins, cursando o último ano na modalidade integrado, seja bem vindo ao meu site portifóio .</p>
+				</div>
+
+				<ul class="habilidades">
+					<li class="habilidade-9">
+						<h2>
+							<i class="fa fa-html5"></i> <strong>Html</strong> //90%
+							<div class="barra">
+								<span></span>
+							</div>
+						</h2>
+					</li>
+					<li class="habilidade-7">
+						<h2>
+							<i class="fa fa-css3"></i> <strong>CSS3</strong> //70%
+							<div class="barra">
+								<span></span>
+							</div>
+						</h2>
+					</li>
+					<li class="habilidade-5">
+						<h2>
+							<i class="fa fa-wordpress"></i> <strong>Wordpress</strong> //50%
+							<div class="barra">
+								<span></span>
+							</div>
+						</h2>
+					</li>
+					<li class="habilidade-4">
+						<h2>
+							<i class="fa fa-git"></i> <strong>Git</strong> //40%
+							<div class="barra">
+								<span></span>
+							</div>
+						</h2>
+					</li>
+				</ul>
+
+
+				<a href="#" class="botao medio"><i class="fa fa-picture-o"></i> Acessar Portifólio</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="logo-rodape">
+			<a href="index.html">
+				<img src="img/logo-rodape.png" alt="Logo Tag Rodapé">
+			</a>
+		</div>
+
+		<p>Todos os Direitos Reservados</p>
+	</footer>
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+
+	<script >
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+
+			new WOW().init();
+
+		});
+
+	</script>
+
+</body>
+</html>

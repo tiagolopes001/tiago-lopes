@@ -17,6 +17,7 @@ section.sobre
 			+breakpoint($tablet)
 				margin: 0 0 30px  
 
+
 		[class^="icone-"]
 			width: 90px
 			height: 90px
@@ -35,6 +36,13 @@ section.sobre
 				+font-size(50px)
 				margin: 0 3px
 
+			+breakpoint($celular)
+				width: 50px
+				height: 50px
+				line-height: 50px
+				+font-size(40px)
+				margin: 0 3px
+
 			&.icone-lapis
 				+order(1)
 
@@ -48,14 +56,5 @@ section.sobre
 				+order(5)
 
 
-	.textos
-		+make-sm-column(8)
-		+make-sm-column-offset(2)
-		text-align: center
-		p
-			+font-size(30px)
-
-		.botao
-			display: table
-			margin: 30px auto
+	
 			

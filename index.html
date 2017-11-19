@@ -3,30 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/home.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="sobre.html"> Sobre</a></li>
+			<li><a href="portifolio.html"> Portifolio</a></li>
+			<li><a href="contato.html"> Contato</a></li>
+			</ul>
+
+		</nav>
+
+	<div class="layout">
 	<header>
 		<div class="container">
-			<div class="logo">
+			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s" >
 				<img src="img/logo-topo.png" alt="logo topo">
 				
 			</div>
 			
 			<div class="links">
-				<nav>
+				<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
-						<li><a href="#"> Sobre</a></li>
-						<li><a href="#"> Portifolio</a></li>
-						<li><a href="#"> contato</a></li>
+						<li><a href="sobre.html"> Sobre</a></li>
+						<li><a href="portifolio.html"> Portifolio</a></li>
+						<li><a href="contato.html"> contato</a></li>
 					</ul>
 
 				</nav>
+
+				<a class="toggle" href="javascript:;"> 
+					<span></span>
+					<span></span>
+					<span></span>
+
+				</a>
+
 
 				<ul class="social">
 					<li>
@@ -52,23 +71,26 @@
 		<section class="sobre">
 			<div class="container">
 				<div class="itens">
-					<div class="foto">
+					<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
 						<img src="img/logo-miolo.png" alt="Foto">
 					</div>
 
-					<div class="icone-lapis">
-						<i class="fa fa-pencil"></i>
+					<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+						
+						<i class="fa fa-pencil">
+							
+						</i>
 					</div>
 
-					<div class="icone-codigo">
+					<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="1.5s">
 						<i class="fa fa-code"></i>
 					</div>
 
-					<div class="icone-coracao">
+					<div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
 						<i class="fa fa-heart"></i>
 					</div>
 
-					<div class="icone-compartilhar">
+					<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="2.5s">
 						<i class="fa fa-share-alt"></i>
 					</div>
 
@@ -94,6 +116,26 @@
 
 		<p>Todos os Direitos Reservados</p>
 	</footer>
+
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+
+	<script >
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+
+			new WOW().init();
+
+		});
+
+	</script>
 	
 </body>
 </html>
